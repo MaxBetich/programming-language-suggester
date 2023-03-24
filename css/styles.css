@@ -8,6 +8,25 @@
   border-width: 5px;
   padding: 5px;
   margin: 1%;
+  background-color: firebrick;
+  color: antiquewhite;
+}
+
+body {
+  background-color: silver;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bolder;
 }
 
 img {

@@ -6,6 +6,7 @@ function languageSelector(event) {
   const question4 = document.querySelector("input[name='question4']:checked").value;
   const question5 = document.querySelector("input[name='question5']:checked").value;
 
+  document.getElementById("result").setAttribute("class", "hidden");
   document.getElementById("img1").setAttribute("class", "hidden");
   document.getElementById("img2").setAttribute("class", "hidden");
   document.getElementById("img3").setAttribute("class", "hidden");
@@ -40,10 +41,15 @@ function languageSelector(event) {
     document.getElementById("result").removeAttribute("class");
   }
 
-  document.getElementById("output").innerText = output
+  document.getElementById("output").innerText = output;
+  document.getElementById("reset").removeAttribute("class");
 }
 
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
   form.addEventListener("submit", languageSelector);
+  form.addEventListener("reset", function(event) {
+    document.getElementById("reset").setAttribute("class", "hidden");
+    document.getElementById("result").setAttribute("class", "hidden");
+  })
 });
