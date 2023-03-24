@@ -17,21 +17,27 @@ function languageSelector(event) {
   if (question1  === "yes") {
     output = "JavaScript is the language for you!";
     document.getElementById("img1").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   } else if (question2 === "yes") {
     output = "You'll likely find Ruby to be right up your alley!";
     document.getElementById("img2").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   } else if (question3 === "yes") {
     output = "Python is a heck of a good time for someone as cool as you!";
     document.getElementById("img3").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   } else if (question4 === "yes") {
     output = "Go is the language for programmers on the move!";
     document.getElementById("img4").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   } else if (question5 === "yes") {
     output = "C# will let you code with perfect pitch!";
     document.getElementById("img5").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   } else {
     output = "The only logical choice for a first language is Swift!";
     document.getElementById("img6").removeAttribute("class");
+    document.getElementById("result").removeAttribute("class");
   }
 
   document.getElementById("output").innerText = output
