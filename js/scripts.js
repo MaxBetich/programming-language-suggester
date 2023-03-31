@@ -48,7 +48,7 @@ function languageSelector(event) {
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
   form.addEventListener("submit", languageSelector);
-  form.addEventListener("reset", function(event) {
+  form.addEventListener("reset", function() {
     document.getElementById("reset").setAttribute("class", "hidden");
     document.getElementById("result").setAttribute("class", "hidden");
   })
